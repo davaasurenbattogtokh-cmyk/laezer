@@ -1,0 +1,21 @@
+<?php
+// Copy to config.php OUTSIDE public_html. Never commit your completed config.
+return [
+    'origin' => 'https://laezer.shop',
+    'db' => [
+        'host' => 'localhost',
+        'port' => 3306,
+        'name' => 'YOUR_HOSTINGER_DATABASE',
+        'user' => 'YOUR_HOSTINGER_DATABASE_USER',
+        'password' => '',
+    ],
+    // Set your own random installation key, at least 32 characters.
+    // This key is required by /setup and stops working after installation.
+    'setup_key' => 'REPLACE_WITH_A_RANDOM_INSTALLATION_KEY',
+    'notifications' => ['enabled' => false, 'email' => ''],
+    'qpay' => [
+        'enabled' => false, 'environment' => 'sandbox',
+        'client_id' => '', 'client_secret' => '', 'invoice_code' => '',
+        'public_origin' => 'https://laezer.shop', 'callback_secret' => '',
+    ],
+];

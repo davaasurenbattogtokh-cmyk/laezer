@@ -1,5 +1,7 @@
 # LaEzer Mongolian sensory shop
 
+**Hostinger shared hosting / laezer.shop:** use the complete PHP + MySQL version in [`hostinger/`](hostinger/README.md). Upload only its `public_html` and sibling `laezer-private` folders according to that guide. The repository root below retains the original Cloudflare/Sites runtime; it is not the Hostinger document root.
+
 The existing LaEzer brand presentation now includes the reference shop's three products, prices, quantities, bundle, basket and manual-payment checkout. Official hero images and logos, botanical accents, pointer-follow PNG products, Mongolian review summaries and the unified self-hosted Manrope typography are preserved.
 
 ## Source and runtime

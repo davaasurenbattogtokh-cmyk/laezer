@@ -1,0 +1,118 @@
+{
+  "products": [
+    {
+      "sku": "LZ-001",
+      "name": "Сика Капсул Спикуль Ампул",
+      "en": "CICA Capsule Spicule Ampoule · 30ml",
+      "step": "STEP 01 · НЭЭХ",
+      "role": "Шингээлтийн замыг нээх",
+      "desc": "5,000ppm байгалийн спикуль, CICA-TECA болон Derma-Clera™ агуулсан ампул. Дараагийн арчилгаанд арьсыг бэлтгэж, тайвшруулахад чиглэнэ.",
+      "tags": [
+        "Спикуль 5,000ppm",
+        "CICA-TECA",
+        "Derma-Clera™"
+      ],
+      "image": "/assets/reference/cica.png",
+      "price": 100000,
+      "sortOrder": 0
+    },
+    {
+      "sku": "LZ-002",
+      "name": "Каллус Рипэйр Ампул",
+      "en": "Callus Repair Ampoule · 30ml",
+      "step": "STEP 02 · ДҮҮРГЭХ",
+      "role": "Гүнээс чийгээр дүүргэх",
+      "desc": "Эдельвейсийн өсгөврийн ханд, 9 төрлийн пептид, 11 төрлийн гиалуроны хүчилтэй. Арьсны өдөр тутмын чийгшүүлэх арчилгаанд зориулсан ампул.",
+      "tags": [
+        "Эдельвейс",
+        "9 пептид",
+        "11 гиалурон"
+      ],
+      "image": "/assets/reference/ampoule.png",
+      "price": 100000,
+      "sortOrder": 1
+    },
+    {
+      "sku": "LZ-003",
+      "name": "Каллус Рипэйр Крем",
+      "en": "Callus Repair Cream · 50ml",
+      "step": "STEP 03 · БИТҮҮМЖЛЭХ",
+      "role": "Битүүмжилж, бэхжүүлэх",
+      "desc": "Ниацинамид, церамид, эдельвейсийн найрлагатай крем. Ампулын дараа түрхэж, арьсны чийгийг хадгалах төгсгөлийн алхам болно.",
+      "tags": [
+        "Ниацинамид",
+        "Церамид",
+        "Эдельвейс"
+      ],
+      "image": "/assets/reference/cream.png",
+      "price": 150000,
+      "sortOrder": 2
+    },
+    {
+      "sku": "LZ-SET",
+      "name": "3 шатлалт иж бүрдэл",
+      "en": "Full Barrier Repair Set · 30ml + 30ml + 50ml",
+      "step": "ИЖ БҮРДЭЛ",
+      "role": "Хамгийн бүрэн шийдэл",
+      "desc": "Сика спикуль ампул, каллус рипэйр ампул, каллус рипэйр крем. Нээх · Дүүргэх · Битүүмжлэх гурван алхмыг нэг дор.",
+      "tags": [
+        "3 бүтээгдэхүүн",
+        "Бүрэн иж бүрдэл"
+      ],
+      "image": "/assets/products/ampoule.png",
+      "price": 350000,
+      "bundle": true,
+      "sortOrder": 3
+    }
+  ],
+  "banners": [
+    {
+      "id": "hero-1",
+      "alt": "LaEzer-ийн албан ёсны брэндийн зураг — бүтээгдэхүүн барьсан модель",
+      "kicker": "REVEAL YOUR TRUE TEXTURE",
+      "title": "Байгалиас.\nТаны арьсанд.",
+      "body": "Байгалийн урам, шинжлэх ухааны хослол. LaEzer-ийн ертөнцөд тавтай морил.",
+      "cta": "Брендийн тухай",
+      "href": "#nature",
+      "desktop_image": "/assets/official/hero-1-pc.webp",
+      "mobile_image": "/assets/official/hero-1-mo.webp",
+      "sort_order": 0
+    },
+    {
+      "id": "hero-2",
+      "alt": "LaEzer Cica Capsule Spicule Ampoule, центелла навчтай",
+      "kicker": "CICA CAPSULE SPICULE AMPOULE",
+      "title": "Арчилгааны\nшинэ мэдрэмж.",
+      "body": "Сика капсул спикул ампул. Өдөр тутмын арчилгааг шинээр нээ.",
+      "cta": "Бүтээгдэхүүн нээх",
+      "href": "#collection",
+      "desktop_image": "/assets/official/hero-2-pc.webp",
+      "mobile_image": "/assets/official/hero-2-mo.webp",
+      "sort_order": 1
+    },
+    {
+      "id": "hero-3",
+      "alt": "LaEzer Callus Repair Cream-ийн онгорхой сав",
+      "kicker": "CALLUS REPAIR CREAM",
+      "title": "Зөөлөн бүтэц.\nТайван арчилгаа.",
+      "body": "Callus Repair Cream. Өөртөө үлдээх хэдхэн хором.",
+      "cta": "Цувралтай танилцах",
+      "href": "#collection",
+      "desktop_image": "/assets/official/hero-3-pc.webp",
+      "mobile_image": "/assets/official/hero-3-mo.webp",
+      "sort_order": 2
+    },
+    {
+      "id": "hero-4",
+      "alt": "LaEzer Callus Repair Ampoule-ийн албан ёсны бүтээгдэхүүний зураг",
+      "kicker": "CALLUS REPAIR AMPOULE",
+      "title": "Дусал бүрд\nтаны мөч.",
+      "body": "Callus Repair Ampoule. Хулганаа хөдөлгөж, ойроос мэдрээрэй.",
+      "cta": "Хөдөлгөөнөөр мэдрэх",
+      "href": "#try",
+      "desktop_image": "/assets/official/hero-4-pc.webp",
+      "mobile_image": "/assets/official/hero-4-mo.webp",
+      "sort_order": 3
+    }
+  ]
+}

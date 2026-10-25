@@ -46,3 +46,8 @@ yarn-error.log*
 .DS_Store
 
 outputs/
+
+# Hostinger server-local configuration and customer images
+/hostinger/laezer-private/config.php
+/hostinger/laezer-private/uploads/
+/hostinger/release/
