@@ -1,0 +1,12 @@
+export let PRODUCTS=[
+ {sku:'LZ-001',name:'Сика Капсул Спикуль Ампул',en:'CICA Capsule Spicule Ampoule · 30ml',step:'STEP 01 · НЭЭХ',role:'Шингээлтийн замыг нээх',desc:'5,000ppm байгалийн спикуль, CICA-TECA болон Derma-Clera™ агуулсан ампул. Дараагийн арчилгаанд арьсыг бэлтгэж, тайвшруулахад чиглэнэ.',tags:['Спикуль 5,000ppm','CICA-TECA','Derma-Clera™'],image:'assets/products/cica.png',price:100000},
+ {sku:'LZ-002',name:'Каллус Рипэйр Ампул',en:'Callus Repair Ampoule · 30ml',step:'STEP 02 · ДҮҮРГЭХ',role:'Гүнээс чийгээр дүүргэх',desc:'Эдельвейсийн өсгөврийн ханд, 9 төрлийн пептид, 11 төрлийн гиалуроны хүчилтэй. Арьсны өдөр тутмын чийгшүүлэх арчилгаанд зориулсан ампул.',tags:['Эдельвейс','9 пептид','11 гиалурон'],image:'assets/products/ampoule.png',price:100000},
+ {sku:'LZ-003',name:'Каллус Рипэйр Крем',en:'Callus Repair Cream · 50ml',step:'STEP 03 · БИТҮҮМЖЛЭХ',role:'Битүүмжилж, бэхжүүлэх',desc:'Ниацинамид, церамид, эдельвейсийн найрлагатай крем. Ампулын дараа түрхэж, арьсны чийгийг хадгалах төгсгөлийн алхам болно.',tags:['Ниацинамид','Церамид','Эдельвейс'],image:'assets/products/cream.png',price:150000},
+ {sku:'LZ-SET',name:'3 шатлалт иж бүрдэл',en:'Full Barrier Repair Set · 30ml + 30ml + 50ml',step:'ИЖ БҮРДЭЛ',role:'Хамгийн бүрэн шийдэл',desc:'Сика спикуль ампул, каллус рипэйр ампул, каллус рипэйр крем. Нээх · Дүүргэх · Битүүмжлэх гурван алхмыг нэг дор.',tags:['3 бүтээгдэхүүн','Бүрэн иж бүрдэл'],image:'assets/products/ampoule.png',price:350000,bundle:true}
+];
+export const DELIVERY={fee:5000,freeOver:250000,area:'Улаанбаатар хот дотор 1–2 хоногт хүргэнэ. Орон нутагт унаагаар илгээнэ.'};
+export const MERCHANT={phone:'90518888',phone2:'88959598',messenger:'https://m.me/soulalpaca',bank:'Хаан банк',account:'5374444955',holder:'А.Цэндаюуш'};
+export function getProduct(sku){return PRODUCTS.find(p=>p.sku===sku)}
+export function setProducts(products){PRODUCTS=products}
+export function calculateCart(items,products=PRODUCTS){const lines=items.map(item=>{const p=products.find(p=>p.sku===item.sku);if(!p||!Number.isInteger(item.qty)||item.qty<1||item.qty>99)throw new Error('Бүтээгдэхүүний тоо ширхэг буруу байна.');return{sku:p.sku,name:p.name,price:p.price,qty:item.qty,lineTotal:p.price*item.qty}});const subtotal=lines.reduce((s,p)=>s+p.lineTotal,0),quantity=lines.reduce((s,p)=>s+p.qty,0),delivery=subtotal===0||subtotal>=DELIVERY.freeOver?0:DELIVERY.fee;return{items:lines,subtotal,quantity,delivery,total:subtotal+delivery}}
+export function money(value){return new Intl.NumberFormat('en-US').format(value)+'₮'}

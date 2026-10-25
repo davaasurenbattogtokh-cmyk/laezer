@@ -1,0 +1,113 @@
+[
+  {
+    "name": "hero-1-pc",
+    "url": "https://laezer.co.kr/web/upload/category/editor/2025/06/11/a7db7d426c38f181d16e139735a6455e.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "bytes": 91118
+  },
+  {
+    "name": "hero-1-mo",
+    "url": "https://laezer.co.kr/web/upload/category/editor/2025/06/11/d49eee98d6dc4b750e54d92b5aaec53e.png",
+    "size": [
+      960,
+      1280
+    ],
+    "bytes": 82712
+  },
+  {
+    "name": "hero-2-pc",
+    "url": "https://laezer.co.kr/web/upload/category/editor/2025/06/09/ea01716a357e3f49b289e3abb72bfee1.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "bytes": 115588
+  },
+  {
+    "name": "hero-2-mo",
+    "url": "https://laezer.co.kr/web/upload/category/editor/2025/06/09/ba533dace7d58ff499345cdc39966c07.png",
+    "size": [
+      960,
+      1080
+    ],
+    "bytes": 80112
+  },
+  {
+    "name": "hero-3-pc",
+    "url": "https://laezer.co.kr/web/upload/category/editor/2025/06/09/a1e8467f618a22fe172c97c97c0e2d14.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "bytes": 49744
+  },
+  {
+    "name": "hero-3-mo",
+    "url": "https://laezer.co.kr/web/upload/category/editor/2025/06/10/7e612ffcddc76193ecec007b81fed905.png",
+    "size": [
+      960,
+      1080
+    ],
+    "bytes": 36162
+  },
+  {
+    "name": "hero-4-pc",
+    "url": "https://laezer.co.kr/web/upload/category/editor/2025/06/09/18961f80ca9765f05828022c689c21c4.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "bytes": 81088
+  },
+  {
+    "name": "hero-4-mo",
+    "url": "https://laezer.co.kr/web/upload/category/editor/2025/06/09/1bd8d2ea969faf82575e39ea94880a63.png",
+    "size": [
+      960,
+      1080
+    ],
+    "bytes": 60320
+  },
+  {
+    "name": "review-1",
+    "url": "https://laezer.co.kr/web/upload/category/editor/2025/02/18/501ef18b7d52844756245945a56e385d.png",
+    "size": [
+      1000,
+      800
+    ],
+    "bytes": 33214
+  },
+  {
+    "name": "review-2",
+    "url": "https://laezer.co.kr/web/upload/category/editor/2025/02/18/4a3fdf6ce1f5438279aec81aae0cc2ce.png",
+    "size": [
+      1000,
+      800
+    ],
+    "bytes": 23360
+  },
+  {
+    "name": "review-3",
+    "url": "https://laezer.co.kr/web/upload/category/editor/2025/02/18/20ee5281e07565fdb379668563e26f77.png",
+    "size": [
+      1000,
+      800
+    ],
+    "bytes": 23620
+  },
+  {
+    "name": "cica-packshot",
+    "url": "https://laezer.co.kr/web/product/medium/202507/1b632644805682133ce637320da807ba.jpg"
+  },
+  {
+    "name": "ampoule-packshot",
+    "url": "https://laezer.co.kr/web/product/medium/202507/76ed15162cf94086170716d448894298.jpg"
+  },
+  {
+    "name": "cream-packshot",
+    "url": "https://laezer.co.kr/web/product/medium/202507/b6744c4f6bedd5754eed2dd2d3d8f149.jpg"
+  }
+]
