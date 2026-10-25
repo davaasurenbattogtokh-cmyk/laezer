@@ -1,0 +1,9 @@
+# Dependencies
+/node_modules/
+/dist/
+/.wrangler/
+/.sites-runtime/
+.env*
+!.env.example
+.dev.vars*
+*.pem
