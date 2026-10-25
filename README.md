@@ -1,10 +1,10 @@
 # LaEzer — laezer.shop / Hostinger PHP Git deployment
 
-Энэ **hostinger-shared** branch нь Hostinger shared hosting-ийн **PHP/HTML сайт → Git deployment**-д зориулсан бэлэн document root. `index.php`, зураг, CSS, JS нь branch-ийн үндсэн хавтаст байрлана. Node.js, pnpm, Next.js, Vinext, build command болон output directory шаардахгүй.
+Энэ **main** branch нь Hostinger shared hosting-ийн **PHP/HTML сайт → Git deployment**-д зориулсан бэлэн document root. `index.php`, зураг, CSS, JS нь branch-ийн үндсэн хавтаст байрлана. Node.js, pnpm, Next.js, Vinext, build command болон output directory шаардахгүй.
 
 ## Зураг дээрх `.next` алдаа
 
-`main` branch-ийн Cloudflare/Vinext эх кодыг Node.js Web App горимоор deploy хийсэн учраас Hostinger `.next` output хүлээсэн. `.next`-ийг `dist` болговол эхний build output алдаа арилж болох ч Cloudflare D1/R2 runtime нь Hostinger-ийн Node сервер дээр шууд ажиллахгүй.
+Өмнөх Cloudflare/Vinext эх кодыг Node.js Web App горимоор deploy хийсэн учраас Hostinger `.next` output хүлээсэн. `.next`-ийг `dist` болговол эхний build output алдаа арилж болох ч Cloudflare D1/R2 runtime нь Hostinger-ийн Node сервер дээр шууд ажиллахгүй.
 
 Тиймээс энэ branch-ийг **PHP/HTML сайтын Git integration**-аар байрлуулна. Node.js Web App-ийн build settings цонхонд энэ branch-ийг deploy хийхгүй.
 
@@ -15,7 +15,7 @@
 | Website type | Custom PHP/HTML |
 | Domain | `laezer.shop` |
 | Repository | `davaasurenbattogtokh-cmyk/laezer` |
-| Branch | `hostinger-shared` |
+| Branch | `main` |
 | Root directory | Домэйны `public_html` |
 | PHP | 8.2 буюу түүнээс шинэ |
 | Build command / Output directory | Шаардахгүй |
@@ -47,7 +47,7 @@
 
 ## Шинэчлэлт ба шалгалт
 
-Hostinger auto-deployment-ийг **hostinger-shared** branch-тэй холбоно. Цаашдын PHP deployment өөрчлөлтийг энэ branch дээр хийнэ. `main` нь Cloudflare эх код болон анхны folder-based PHP багцыг хадгалсан архив/хөгжүүлэлтийн хувилбар хэвээр.
+Hostinger auto-deployment-ийг **main** branch-тэй холбоно. Цаашдын засвар, PHP deployment өөрчлөлтийг **main** дээр хийнэ. Өмнөх Cloudflare эх код болон анхны folder-based PHP багцыг `archive/cloudflare-before-hostinger-20261025` branch-д хадгалсан. `hostinger-shared` нь эхний PHP deployment snapshot хэвээр; Hostinger дээр main-ийг сонгоно.
 
 PHP/MySQL backend нь 18 integration test, 36 local HTTP assertion-оор шалгагдсан. Энэ deployment layout-ийн PHP entrypoint, private config болон image path-ийг мөн локал HTTP/MySQL-ийн 36 assertion-оор баталсан. Hostinger account дээрх бодит Git deployment, Apache/LiteSpeed rewrite, DNS, SSL-ийг одоогоор шалгаагүй.
 
